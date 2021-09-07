@@ -1,0 +1,11 @@
+node_modules/
+dist/
+coverage/
+
+# lint and docs
+.eslintrc.js
+.gitignore
+.prettierrc
+COPYING
+db.png
+README.md
