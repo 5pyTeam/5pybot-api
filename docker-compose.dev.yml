@@ -32,8 +32,6 @@ services:
       - "POSTGRES_USER=${DB_USER}"
       - "POSTGRES_PASSWORD=${DB_PASSWORD}"
       - "POSTGRES_DB=${DB_NAME}"
-    volumes:
-      - "./db/:/var/lib/postgresql/data"
     restart: always
 
   adminer:
@@ -41,11 +39,9 @@ services:
     restart: always
     ports:
       - 8080:8080 
-      
+
   redis:
     image: bitnami/redis
     environment:
       - "REDIS_PASSWORD=${REDIS_PASSWORD}"
-    volumes:
-      - "./redis:/data"
 

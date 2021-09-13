@@ -25,6 +25,5 @@ export class User {
   //discord id
   dID: string;
 
-  @Column()
 
 }
